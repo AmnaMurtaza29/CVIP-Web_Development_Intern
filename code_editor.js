@@ -1,17 +1,10 @@
-// code_editor.js
+// Update the iframe content with the generated code
+    updateIframeContent(outputFrame, fullCode);
+}
 
-// Function to run the code in the iframe
-function run() {
-    // Get the values of HTML, CSS, and JavaScript code
-    var htmlCode = document.getElementById('html-code').value;
-    var cssCode = document.getElementById('css-code').value;
-    var jsCode = document.getElementById('js-code').value;
-
-    // Get the iframe element
-    var outputFrame = document.getElementById('output');
-
-    // Generate the full HTML code with the provided HTML, CSS, and JavaScript code
-    var fullCode = `
+// Function to generate the full HTML code
+function generateFullCode(htmlCode, cssCode, jsCode) {
+    return `
         <html>
         <head>
             <style>${cssCode}</style>
@@ -19,11 +12,14 @@ function run() {
         <body>${htmlCode}<script>${jsCode}</script></body>
         </html>
     `;
+}
 
-    // Update the iframe content with the generated code
+// Function to update the iframe content
+function updateIframeContent(outputFrame, fullCode) {
     outputFrame.contentDocument.open();
     outputFrame.contentDocument.write(fullCode);
     outputFrame.contentDocument.close();
 }
 
-// You can add more functionality or modifications based on your requirements.
+// Use event listeners to trigger the code execution
+document.getElementById('run-button').addEventListener('click', run);
