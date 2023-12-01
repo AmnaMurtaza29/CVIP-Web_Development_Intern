@@ -1,0 +1,524 @@
+/* Add the CSS code for styling here */
+* {
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+body {
+    background-color: #8eb3ed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    background-color: navy;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: goldenrod;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    text-decoration: none;
+}
+
+.logo {
+    color: goldenrod;
+}
+
+.bn {
+    color: white;
+    background-color: navy;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: goldenrod;
+    color: navy;
+}
+
+.bn:hover {
+    background-color: #8eb3ed;
+    color: white;
+}
+
+.mee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #2b3b4e;
+    position: relative;
+}
+
+.social-links {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: color 0.1s ease-in-out;
+}
+
+.social-links link:hover {
+    color: navy;
+}
+
+.social-links i {
+    margin-right: 5px;
+    color: goldenrod;
+}
+
+.name {
+    text-align: center;
+}
+
+.name p {
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+
+.name span {
+    color: #0e0075;
+}
+
+.name:hover p {
+    color: #0e0075;
+}
+
+.name p span {
+    display: inline-block;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.name p:hover span {
+    transform: scale(1.2);
+}
+
+.about {
+    background-color: navy;
+    /* Change background color to navy */
+    color: #ffffff;
+    /* Set text color to white for better contrast */
+    padding: 50px;
+}
+
+.me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.img img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    flex: 2;
+}
+
+.text h1 {
+    color: #ffffff;
+    font-size: 45px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 1em;
+    line-height: 28px;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+
+.text p:hover {
+    color: navajowhite;
+}
+
+.button {
+    color: white;
+    background-color: navy;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: #8eb3ed;
+    color: white;
+}
+
+.button:hover{
+    background-color: goldenrod;
+    color: navy;
+}
+
+.button1{
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: navy;
+    color: white;
+}
+.button1:hover{
+    background-color: goldenrod;
+    color: navy;
+}
+
+.competencies {
+    background-color: #8eb3ed; 
+    padding: 80px 0;
+    text-align: center;
+}
+
+.competencies h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333; 
+}
+
+.competencies ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.competencies ul li {
+    background-color: #007bff; 
+    color: #fff; 
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.competencies ul li:hover {
+    background-color: #0056b3; 
+    transform: scale(1.1);
+}
+
+.competencies .cyber {
+    margin-top: 40px;
+}
+
+.competencies .cyber h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333; 
+}
+
+.competencies .cyber ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.competencies .cyber ul li {
+    background-color: #28a745; 
+    color: #fff; 
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.competencies .cyber ul li:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+#heading{
+    font-size: 50px;
+    color: navy;
+
+}
+.projects {
+    background: navy;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: white;
+    font-size: 70px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background-color: #8eb3ed;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: navy;
+}
+
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra {
+    color: navy;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.card .button {
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 5s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(238, 55, 85);
+    cursor: alias;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+#h3{
+    font-size: 30px;
+    color: #8eb3ed;
+    text-align: center;
+}
+
+
+.contact {
+    background-color: #8eb3ed;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px navy;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#head2{
+    font-size: 50px;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#response {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+}
+.contact-text h2{
+    font-size: 50px;
+    line-height: 1;
+}
+.contact-text h2 span{
+   color: navy;
+}
+.contact-text h4{
+    margin: 15px 0;
+    color: rgb(228, 228, 228);
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text p{
+    color: navy;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+.contact-list li{
+   margin-bottom: 10px;
+   display: block;
+   color: navy;
+}
+.contact-list i{
+    display: inline-block;
+    color: navy;
+    font-size: 25px;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+.contact-list li i:hover{
+   transform: scale(1.01) translateY(-5px);
+   color: black;
+}
+.contact-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border: 2px solid navy;
+    border-radius: 50%;
+    font-size: 20px;
+    color: navy;
+    text-decoration: none;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    margin: 30px 15px 30px 0;
+}
+.contact-icons a:hover{
+    background: navy;
+    color: #081b29; 
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input,form textarea{
+   border: none;
+   outline: none;
+   width: 90%;
+   padding: 18px;
+   background: navy;
+   color: #000;
+   font-size: 1rem;
+   font-weight: 600;
+   margin-bottom: 0.5rem;
+   border-radius: 0.5rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+}
+.contact-form form .send{
+    display: inline-block;
+    padding: 14px 60px;
+    background: navy;
+    border-radius: 40px;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: 1s;
+    box-shadow: 0 0 5px navy,
+    0 0 25px navy;
+}
+.contact-form form .send:hover{
+    box-shadow: 0 0 5px navy,
+    0 0 25px rgb(12, 12, 135), 0 0 50px rgb(46, 46, 118),
+    0 0 100px navy, 0 0 200px navy;
+}
+footer{
+    display: flex;
+    color: white;
+    justify-content: center;
+    background-color: black;
+    position: relative;
+    height: 80px;
+    width: 100%;
+}
+
+.copyright {
+    font-weight: bold;
+  }
